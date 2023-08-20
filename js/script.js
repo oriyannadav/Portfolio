@@ -53,3 +53,7 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+/*==================== video speed ====================*/
+let vid = document.getElementById("video");
+vid.playbackRate = 0.8;
