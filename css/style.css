@@ -15,7 +15,8 @@
     --bg-color: #000000;
     --second-bg-color: #111111;
     --text-color: #fff;
-    --main-color: #ff004f;
+    --main-color: #0ef;
+    /* --main-color: #ff004f; */
     --second-main-color: #B54769;
     --grey: #ababab;
 }
@@ -64,10 +65,24 @@ section.section {
     color: var(--text-color);
     margin-left: 4rem;
     transition: 0.3s;
+    text-decoration: none;
+    position: relative;
 }
 
-.navbar a:hover, .navbar a.active {
-    color: var(--main-color);
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after, .navbar a.active::after {
+    /* color: var(--main-color); */
+    width: 100%;
 }
 
 #menu-icon {
