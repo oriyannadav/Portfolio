@@ -17,7 +17,7 @@
     --text-color: #fff;
     --main-color: #0ef;
     /* --main-color: #ff004f; */
-    --second-main-color: #B54769;
+    --second-main-color: #47a1b5;
     --grey: #ababab;
 }
 
@@ -185,7 +185,6 @@ span {
 
 .about-img img {
     width: 35vw;
-    /* height: 80vh; */
     border-radius: 15px;
 }
 
@@ -206,6 +205,53 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.about-content .tab-titles {
+    display: flex;
+    margin: 1.6rem 0px 3.2rem;
+}
+
+.about-content .tab-links {
+    margin-right: 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.about-content .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.about-content .tab-links.active-link::after {
+    width: 50%;
+}
+
+.about-content .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.about-content .tab-contents ul li span {
+    color: var(--second-main-color);
+    font-size: 1.4rem;
+}
+
+.about-content .tab-contents {
+    display: none;
+}
+
+.about-content .tab-contents.active-tab {
+    display: block;
 }
 
 .portfolio {
