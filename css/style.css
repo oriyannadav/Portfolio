@@ -179,9 +179,9 @@ section.section {
     }
 }
 
-/* span {
+span {
     color: var(--main-color);
-} */
+}
 
 .home-content h1 {
     font-size: 5.6rem;
