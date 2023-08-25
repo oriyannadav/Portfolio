@@ -536,7 +536,19 @@ span {
     }
 
     .home {
+        
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
     }
 
     .home-content h3, .home-content .text-animate {
