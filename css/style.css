@@ -509,6 +509,10 @@ span {
 }
 
 @media (max-width: 768px) {
+    .logo{
+        padding-left: 22.5px;
+    }
+    
     .menu-btn {
         position: relative;
         display: flex;
