@@ -85,7 +85,13 @@ section.section {
     width: 100%;
 }
 
-#menu-icon {
+/* #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+} */
+
+.menu-btn {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -93,7 +99,7 @@ section.section {
 
 .home-img video {
     width: 35vw;
-    padding-left: 10px;
+    padding-left: 20px;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -243,6 +249,7 @@ span {
 .about-img img {
     width: 35vw;
     border-radius: 15px;
+    margin-right: 20px;
 }
 
 .heading {
@@ -509,8 +516,45 @@ span {
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
+    /* #menu-icon {
         display: block;
+    } */
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        /* height: 80px; */
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-burger {
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-burger::before, .menu-burger::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-burger::before {
+        transform: translateY(-10px);
+    }
+    
+    .menu-burger::after {
+        transform: translateY(10px);
     }
 
     .navbar {
@@ -558,6 +602,31 @@ span {
     .home-img video {
         width: 70vw;
         margin-top: 4rem;
+    }
+
+    @keyframes homeBgText {
+        0%, 10%, 100% {
+            background-position: -27rem 0;
+        }
+    
+        65%, 85% {
+            background-position: 0 0;
+        }
+    }
+    
+    @keyframes homeCursorText {
+        0%, 10%, 100% {
+            width: 0;
+        }
+    
+        65%, 78%, 85% {
+            width: 100%;
+            opacity: 1;
+        }
+    
+        75%, 81% {
+            opacity: 0;
+        }
     }
 
     .about {
@@ -637,6 +706,10 @@ span {
     .home-img video {
         width: 90vw;
     }
+    
+    .home-content h1 {
+        font-size: 4rem;
+    }
 
     .home-content h3, .home-content .text-animate {
         font-size: 2.4rem;
@@ -658,4 +731,19 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+}
+
+/* animation */
+
+.menu-btn.open .menu-burger {
+    transform: translateX(-50px);
+    background-color: transparent;   
+}
+
+.menu-btn.open .menu-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
 }

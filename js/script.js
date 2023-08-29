@@ -1,11 +1,20 @@
 /*==================== toggle icon navbar ====================*/
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar');
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+        navbar.classList.add('active');
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+        navbar.classList.remove('active');
+    }
+    
+});
 
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
@@ -30,7 +39,7 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
     /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
-    menuIcon.classList.remove('bx-x');
+    menuIcon.classList.remove('menu-burger');
     navbar.classList.remove('active');
 };
 
