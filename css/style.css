@@ -512,14 +512,13 @@ span {
     .logo{
         padding-left: 22.5px;
     }
-    
+
     .menu-btn {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80px;
-        /* height: 80px; */
         cursor: pointer;
         transition: all 0.5s ease-in-out;
     }
@@ -560,10 +559,13 @@ span {
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
+        transform: translateY(-100%);
+        transition: transform 5s ease-in-out;
     }
 
     .navbar.active {
         display: block;
+        transform: translateY(0);
     }
 
     .navbar a {
@@ -595,6 +597,7 @@ span {
     .home-img video {
         width: 70vw;
         margin-top: 4rem;
+        padding-left: 0px;
     }
 
     @keyframes homeBgText {
