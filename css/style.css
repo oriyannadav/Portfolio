@@ -564,7 +564,7 @@ span {
         padding: 1rem 3%;
         background: var(--second-bg-color);
         opacity: 0;
-        transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+        transition: opacity 0.8s 0.3s, clip-path 1s 0.3s;
         clip-path: circle(0% at top right);
     }
 

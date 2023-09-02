@@ -19,9 +19,19 @@ menuBtn.addEventListener('click', () => {
     
 });
 
+const navLinks = document.querySelectorAll('header nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuBtn.classList.remove('open'); // Change the menu button back to its initial state
+        menuOpen = false;
+        mobileNavbar.classList.remove('active'); // Close the mobile navbar
+    });
+});
+
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// let navLinks = document.querySelectorAll('header nav a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
