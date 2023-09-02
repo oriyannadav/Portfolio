@@ -15,7 +15,7 @@
         <div class="menu-btn">
             <div class="menu-burger"></div>
         </div>
-        <nav class="navbar">
+        <nav class="navbar flex-nav" id="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -49,14 +49,17 @@
             <img src="/img/SheCodes HD May 2023-66 2.jpg" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p>I am a dedicated Junior Full Stack Developer with a passion for creating user-centric web solutions. 
-                With a strong foundation in web development and a commitment to clean, efficient code, I bring ideas 
-                to life by seamlessly blending the art of design with the science of programming. Whether it's crafting 
-                elegant user interfaces or architecting robust backend systems, I thrive on turning concepts into 
-                captivating digital experiences. I'm excited to collaborate on innovative projects and bring value to 
-                the digital landscape. Let's connect and embark on this coding adventure together.</p>
+            <div class="content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Full Stack Developer</h3>
+                <p>I am a dedicated Junior Full Stack Developer with a passion for creating user-centric web solutions. 
+                    With a strong foundation in web development and a commitment to clean, efficient code, I bring ideas 
+                    to life by seamlessly blending the art of design with the science of programming. Whether it's crafting 
+                    elegant user interfaces or architecting robust backend systems, I thrive on turning concepts into 
+                    captivating digital experiences. I'm excited to collaborate on innovative projects and bring value to 
+                    the digital landscape. Let's connect and embark on this coding adventure together.</p>
+            </div>
+            <div class="tab-contents-container">
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('frontend-skills')">Front-end Skills</p>
                     <p class="tab-links" onclick="opentab('backend-skills')">Back-end Skills</p>
@@ -81,14 +84,15 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>She Codes Plus</span><br>Completed a diploma program in engineering, laying the foundation for a strong technical background<!-- I had the honor of participating in the She Codes Plus program, an enriching experience that elevated my coding and technical skills to new heights. 
+                        <li><span>She Codes Plus</span><br>Successfully completed the She Codes Plus program, advancing my coding and tech skills to the next level<!-- I had the honor of participating in the She Codes Plus program, an enriching experience that elevated my coding and technical skills to new heights. 
                             Through this program, I not only expanded my proficiency in programming but also became a part of a supportive and dynamic community of tech enthusiasts. 
                             She Codes Plus not only deepened my knowledge but also ignited a profound passion for technology and innovation, which continues to drive my pursuits in the tech world. --></li>
-                        <li><span>Diploma of Engineering</span><br> Successfully completed the She Codes Plus program, advancing my coding and tech skills to the next level<!-- My educational journey includes the successful completion of a Diploma of Engineering. 
+                        <li><span>Diploma of Engineering</span><br>Completed a diploma program in engineering, where I received the Dux Award, laying the foundation for a strong technical background<!-- My educational journey includes the successful completion of a Diploma of Engineering. 
                             This program equipped me with a strong foundation in engineering principles and technical knowledge, nurturing the development of my technical aptitude.
                             It has been instrumental in shaping my understanding of engineering concepts and their practical applications. --></li>
                     </ul>
                 </div>
+            </div>
         </div>
     </section>
 

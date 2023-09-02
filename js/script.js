@@ -1,5 +1,6 @@
 /*==================== toggle icon navbar ====================*/
 const navbar = document.querySelector('.navbar');
+const mobileNavbar = document.querySelector('#navbar');
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 
@@ -8,10 +9,12 @@ menuBtn.addEventListener('click', () => {
         menuBtn.classList.add('open');
         menuOpen = true;
         navbar.classList.add('active');
+        mobileNavbar.classList.add('active');
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false;
         navbar.classList.remove('active');
+        mobileNavbar.classList.remove('active');
     }
     
 });
@@ -19,6 +22,12 @@ menuBtn.addEventListener('click', () => {
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNavbar.classList.remove('active');
+    });
+});
 
 window.onscroll = () => {
     sections.forEach(sec => {
