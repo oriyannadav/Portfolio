@@ -858,7 +858,7 @@ span {
 @media (max-width: 355px) {
     @keyframes homeBgText {
         0%, 10%, 100% {
-            background-position: -20rem 0;
+            background-position: -15rem 0;
         }
     
         65%, 85% {
