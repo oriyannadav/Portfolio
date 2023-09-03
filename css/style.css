@@ -855,10 +855,10 @@ span {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 313px) {
     @keyframes homeBgText {
         0%, 10%, 100% {
-            background-position: -23rem 0;
+            background-position: -22rem 0;
         }
     
         65%, 85% {
@@ -879,6 +879,10 @@ span {
         75%, 81% {
             opacity: 0;
         }
+    }
+
+    .skill-box {
+        padding-right: 0px;
     }
 }
 
