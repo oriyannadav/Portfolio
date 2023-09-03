@@ -809,12 +809,12 @@ span {
     }
 
     .home-content h3, .home-content .text-animate {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
 
-        @keyframes homeBgText {
+    @keyframes homeBgText {
         0%, 10%, 100% {
-            background-position: -25rem 0;
+            background-position: -24rem 0;
         }
     
         65%, 85% {
@@ -846,12 +846,39 @@ span {
     }
 
     .skill-box {
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    @keyframes homeBgText {
+        0%, 10%, 100% {
+            background-position: -23rem 0;
+        }
+    
+        65%, 85% {
+            background-position: 0 0;
+        }
+    }
+    
+    @keyframes homeCursorText {
+        0%, 10%, 100% {
+            width: 0;
+        }
+    
+        65%, 78%, 85% {
+            width: 100%;
+            opacity: 1;
+        }
+    
+        75%, 81% {
+            opacity: 0;
+        }
     }
 }
 
