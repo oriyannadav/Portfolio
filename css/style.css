@@ -855,7 +855,7 @@ span {
     }
 }
 
-@media (max-width: 317px) {
+@media (max-width: 320px) {
     @keyframes homeBgText {
         0%, 10%, 100% {
             background-position: -20rem 0;
