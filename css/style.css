@@ -282,9 +282,9 @@ span {
     position: relative;
 }
 
-.about-content .tab-contents ul li {
+.about-content .tab-contents ul .education {
     list-style: none;
-    margin: 10px 0px;
+    margin: 15px 0px;
     font-size: 1.4rem;
 }
 
