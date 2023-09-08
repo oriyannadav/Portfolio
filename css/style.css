@@ -352,23 +352,23 @@ span {
     left: 0;
 }
 
-.skill-box:hover::after{
+.skill-box:hover::after {
     width: 100%;
 }
 
-.two:nth-child(2) {
+.two:nth-child(-n+2) {
     background-color: var(--main-color);
 }
 
-.three:nth-child(3) {
+.three:nth-child(-n+3) {
     background-color: var(--main-color);
 }
 
-.four:nth-child(4) {
+.four:nth-child(-n+4) {
     background-color: var(--main-color);
 }
 
-.five:nth-child(5) {
+.five:nth-child(-n+5) {
     background-color: var(--main-color);
 }
 
