@@ -60,10 +60,6 @@ section.section {
     cursor: default;
 }
 
-.mobile-navbar {
-    display: none;
-}
-
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
