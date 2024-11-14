@@ -733,9 +733,15 @@ span {
         flex-direction: column-reverse;
     }
 
+    .about-img {
+        display: flex;
+        justify-content: center;
+    }
+
     .about img {
-        width: 70vw;
+        width: 85vw;
         margin-bottom: 4rem;
+        margin-right: 0;
         display: flex;
     }
 
